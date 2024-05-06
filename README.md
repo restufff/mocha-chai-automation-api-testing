@@ -1,7 +1,7 @@
 # Step to run this Repo
 
 ### Clone Repo
-Clone this repo, click button green clone and choose git
+Clone this repo, click button green code and choose git
 
 ### Setup Node, NPM, Yarn
 For windows and mac user you can [download node](https://nodejs.org/en/) and install.
