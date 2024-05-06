@@ -15,3 +15,4 @@ To install all packages, you need to do these step:
 ### Running the Tests
 - Go to your favorite terminal
 - Run `npm run cy:api`
+- It will run all test and generate mocha reports, you can view the report in the folder reports
