@@ -1,7 +1,26 @@
-const { defineConfig } = require('cypress')
+import { defineConfig } from 'cypress';
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:1234',
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+    specPattern: "test/**/*.test.js",
+    supportFile: false,
   },
-})
+  viewportWidth: 1000,
+  viewportHeight: 660,
+  video: false,
+  chromeWebSecurity: false,
+  reporter: "mochawesome",
+  defaultCommandTimeout: 10000,
+  reporterOptions: {
+    overwrite: false,
+    reportPageTitle: "Automated Test Status",
+    reportTitle: "Automated Test Reporting Dashboard",
+    showPassed: true,
+    autoOpen: false,
+    charts: true,
+    code: false,
+  },
+});
