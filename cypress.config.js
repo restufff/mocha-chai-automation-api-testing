@@ -18,6 +18,7 @@ export default defineConfig({
     overwrite: false,
     reportPageTitle: "Automated Test Status",
     reportTitle: "Automated Test Reporting Dashboard",
+    reportDir: 'reports/mochawesome',
     showPassed: true,
     autoOpen: false,
     charts: true,
