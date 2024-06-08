@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "cy:api": "mocha test/scenarios/**/*.test.js"
+    "cy:api": "mocha test/scenarios/**/*.test.js --reporter mochawesome --reporter-options reportDir=reports/"
+    
   },
   "author": "rf",
   "license": "ISC",
